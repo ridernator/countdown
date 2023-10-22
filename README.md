@@ -15,4 +15,15 @@ You don't need to follow the Countdown rules. You can go crazy and do something 
 ./countdown 1 2 3 4 5 6 7 8 456
 ```
 
-N.B This will not find the best solution. Only **a** solution if one exists
+N.B This will not find the best solution. Only **a** solution if one exists as you can see here:
+
+```
+./countdown 1 1 1 1 10 11
+
+Numbers are : 1 1 1 1 10 
+Target is   : 11
+1 + 1 = 2
+1 + 1 = 2
+2 / 2 = 1
+10 + 1 = 11
+```
