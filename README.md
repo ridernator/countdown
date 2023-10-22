@@ -27,3 +27,5 @@ Target is   : 11
 2 / 2 = 1
 10 + 1 = 11
 ```
+
+If a solution is not found then the closest attainable target will be found

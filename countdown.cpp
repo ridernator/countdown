@@ -21,7 +21,31 @@ Countdown::Countdown(const std::vector<int64_t>& numbers,
             std::cout << *iterator << std::endl;
         }
     } else { // Solution not found
-        std::cout << "Solution not found" << std::endl;
+        std::cout << "Solution not found. Trying to find nearest target" << std::endl;
+
+        for (int64_t offset = 1; offset < target; ++offset) {
+            if (iterate(numbers, target + offset)) { // Solution found
+                std::cout << "Best found was " << (target + offset) << ":" << std::endl;
+
+                // Print out steps in reverse order
+                for (auto iterator = results.rbegin(); iterator != results.rend(); ++iterator) {
+                    std::cout << *iterator << std::endl;
+                }
+
+                break;
+            }
+
+            if (iterate(numbers, target - offset)) { // Solution found
+                std::cout << "Best found was " << (target - offset) << ":" << std::endl;
+                
+                // Print out steps in reverse order
+                for (auto iterator = results.rbegin(); iterator != results.rend(); ++iterator) {
+                    std::cout << *iterator << std::endl;
+                }
+
+                break;
+            }
+        }
     }
 }
 
