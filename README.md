@@ -1,4 +1,4 @@
-# Tool to solve the [Countdown](https://en.wikipedia.org/wiki/Countdown_(game_show)) numbers problems
+# Tool to solve the [Countdown](https://en.wikipedia.org/wiki/Countdown_(game_show)) TV show problems
 
 ## Numbers game
 
