@@ -7,7 +7,7 @@
 /**
  * Class which solves the Countdown maths questions
  **/
-class Countdown{
+class Numbers{
     public:
         /**
          * Constructor for this class
@@ -15,7 +15,7 @@ class Countdown{
          * @param numbers The input numbers (As many as you like)
          * @param target The target to hit
          **/
-        Countdown(const std::vector<int64_t>& numbers,
+        Numbers(const std::vector<int64_t>& numbers,
                   const int64_t target);
 
     private:
