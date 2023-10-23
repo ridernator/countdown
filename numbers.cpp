@@ -1,11 +1,10 @@
-#include "countdown.h"
+#include "numbers.h"
 
-#include <cstdlib>
 #include <iostream>
 #include <algorithm>
 #include <sstream>
 
-Countdown::Countdown(const std::vector<int64_t>& numbers,
+Numbers::Numbers(const std::vector<int64_t>& numbers,
                      const int64_t target) {
     std::cout << "Numbers are : ";
     for (const auto number : numbers) {
@@ -49,7 +48,7 @@ Countdown::Countdown(const std::vector<int64_t>& numbers,
     }
 }
 
-bool Countdown::iterate(const std::vector<int64_t>& numbers,
+bool Numbers::iterate(const std::vector<int64_t>& numbers,
                         const int64_t target) {
     // If number is not in collection
     if (std::find(numbers.begin(), numbers.end(), target) != numbers.end()) {
@@ -182,5 +181,5 @@ int main(const int argc,
 
     target = std::strtoull(*(argv + argc - 1), NULL, 0);
 
-    Countdown countdown(numbers, target);
+    Numbers program(numbers, target);
 }   
